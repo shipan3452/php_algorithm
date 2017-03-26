@@ -35,6 +35,30 @@ class edgeWeightedGraph
 		$this->totalEdgeNum++;
 	}
 
+    /**
+     * 获取图的所有边
+     * 
+     */
+	function getAllEdges(){
+		$edges=[];
+		foreach ($this->obj as $_pointConnectEdge) {
+		    $edges=array_merge($edges,$_pointConnectEdge);
+		}
+		return $edges;
+	}
+
+    /**
+     *获取树的顶点个数 
+     * 
+     */
+	function getPointNum(){
+		return $this->totalPointNum;
+	}
+
+    /**
+     *获取和顶点相连的边 
+     * 
+     */
 	function pointConnectEdge($point){
 		return $this->obj[$point];
 	}
