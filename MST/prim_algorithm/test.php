@@ -1,7 +1,7 @@
 <?php
-require 'edge.php';
-require 'edgeWeightMinPq.php';
-require 'edgeWeightedGraph.php';
+require '../common/edge.php';
+require '../common/edgeWeightMinPq.php';
+require '../common/edgeWeightedGraph.php';
 require 'primMst.php';
 
 use MST\edgeWeightedGraph as graph;
