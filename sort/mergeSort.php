@@ -31,14 +31,14 @@ class  MergeSort
 		//从左右子数组中一次取出一个数，比较大小，取较小者，如此继续
 		for ($k=$low; $k <=$high ; $k++) { 
 		    if($halfL>$mid){
-				  $arr[$k]=$tmp[$halfR++];
-			    }elseif($halfR>$high){
-			      $arr[$k]=$tmp[$halfL++];
-			    }elseif($tmp[$halfL]<$tmp[$halfR]){
-			      $arr[$k]=$tmp[$halfL++];
-			    }else{
-			      $arr[$k]=$tmp[$halfR++];
-			    }
+		      $arr[$k]=$tmp[$halfR++];
+		    }elseif($halfR>$high){
+		      $arr[$k]=$tmp[$halfL++];
+		    }elseif($tmp[$halfL]<$tmp[$halfR]){
+		      $arr[$k]=$tmp[$halfL++];
+		    }else{
+		      $arr[$k]=$tmp[$halfR++];
+		    }
 		}
 	}
 }
