@@ -20,7 +20,7 @@ class QuickSort
 		$cutPos=$low;
 		$cutVal=$arr[$cutPos];
         
-        //从左向右依次找出大于切分元素的指针；
+                //从左向右依次找出大于切分元素的指针；
 		$i=$low;
 		//从右向左依次找出小于切分元素的指针；(最高位加一，是为下面--j操作时，实际从high位来收)
 		$j=$high+1;
@@ -40,7 +40,7 @@ class QuickSort
 			}
 
 			if($i>=$j){
-				break;
+		               break;
 			}
 
 			self::_each($arr,$i,$j);
